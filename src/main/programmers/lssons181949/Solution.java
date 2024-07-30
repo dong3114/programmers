@@ -21,6 +21,7 @@ public class Solution {
                 array.add(big);
             }
         }
+        // String.join Array의 모든 요소를 하나의 문자열로 결합
         String sum = String.join("", array);
         System.out.println(sum);
     }

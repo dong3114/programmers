@@ -1,7 +1,5 @@
 package main.programmers.lessons181943;
 
-import java.util.Scanner;
-
 /**
  * 문자열 my_string, overwrite_string과 정수 s가 주어집니다.
  * 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을

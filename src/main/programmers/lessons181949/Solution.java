@@ -1,4 +1,4 @@
-package main.programmers.lssons181949;
+package main.programmers.lessons181949;
 
 import java.util.ArrayList;
 import java.util.Scanner;

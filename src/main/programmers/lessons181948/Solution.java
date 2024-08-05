@@ -1,4 +1,4 @@
-package main.programmers.lssons181948;
+package main.programmers.lessons181948;
 
 import java.util.Scanner;
 

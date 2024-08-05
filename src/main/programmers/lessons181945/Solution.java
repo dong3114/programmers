@@ -1,6 +1,5 @@
-package main.programmers.lssons181945;
+package main.programmers.lessons181945;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**

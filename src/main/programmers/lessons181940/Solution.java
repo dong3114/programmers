@@ -11,5 +11,8 @@ class Solution {
             answer += my_string;
         }
         return answer;
+
+        // 알고있었는데 ㅡㅡ
+        // return my_string.repeat(k);
     }
 }

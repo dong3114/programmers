@@ -6,7 +6,6 @@ class Solution {
     public String solution(String my_string, int[] index_list) {
         String answer = "";
 
-
         ArrayList<Character> cha = new ArrayList<>();
         for(int i = 0; i < my_string.length(); i++){
             char str = 0;

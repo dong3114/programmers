@@ -1,6 +1,5 @@
 package main.programmers.upgrade;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -31,14 +30,17 @@ public class Main {
                     i++;
                     break;
                 case 2:
-                    // 확률 실행
+                    Rogic r = new Rogic();
+                    r.rogic(probability);
                     break;
                 case 3:
-                    System.out.println(Arrays.toString(new HashMap[]{probability}));
+                    System.out.println(probability);
                     System.out.println("종료합니다.");
                     rogicKey = false;
+                    break;
             }
         }
 
+        sc.close();
     }
 }

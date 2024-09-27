@@ -8,7 +8,7 @@ class Solution {
         for(int i = 0; i < todo_list.length; i++){
             String a = todo_list[i];
             boolean b = finished[i];
-            if(b == true){
+            if(b == false){
                 answer.add(a);
             }
         }

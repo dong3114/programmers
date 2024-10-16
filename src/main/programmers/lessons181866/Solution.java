@@ -1,20 +1,17 @@
 package main.programmers.lessons181866;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Collections;
 
 class Solution {
     public ArrayList<String> solution(String myString) {
-        HashMap<Integer, String> s = new HashMap<>();
         ArrayList<String> answer = new ArrayList<>();
         String a = "";
-        int n = 0;
         for(int i = 0; i < myString.length(); i++){
             String str = String.valueOf(myString.charAt(i));
             if(str.equals("x")){
-                if(!a.isEmpty()) {
-                    n = (int) a.charAt(0);
-                    s.put(n, a);
+                if(!a.equals("")) {
+                    answer.add(a);
                     a = "";
                 }
             } else {
@@ -22,10 +19,9 @@ class Solution {
             }
         }
         if(!a.equals("")){
-            n = (int) a.charAt(0);
-            s.put(n, a);
+            answer.add(a);
         }
-        answer.addAll(s.values());
+        Collections.sort(answer);
         return answer;
     }
 }

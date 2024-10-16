@@ -6,7 +6,8 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args){
         Solution sl = new Solution();
-        String myString = "axbxcxdx";
+        //axxbxx, abcxabdxabaxabddx, "dxccxbbbxxaaaa, zxcxbxaxxxxxxx
+        String myString = "zxcxbxaxxxxxxx";
         System.out.println(Arrays.toString(new ArrayList[]{sl.solution(myString)}));
     }
 }

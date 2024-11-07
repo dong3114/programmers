@@ -15,7 +15,7 @@ class Solution {
                     str = "";
                 } else {
                     str += a;
-                }
+                } 
             } else if(str.equals("")){
                 if (a.equals("a") || a.equals("b") || a.equals("c")) {
                     str = "";

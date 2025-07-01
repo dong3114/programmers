@@ -1,7 +1,6 @@
 package main.programmers.lessons340199;
 
 public class Solution {
-
     /**
      * @param wallet
      * @param bill

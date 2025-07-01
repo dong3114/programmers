@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
 public class Main {
     public static void main(String[] args){
         HashMap<Integer, Map<Integer, Integer>> probability = new HashMap<>();
@@ -44,3 +45,4 @@ public class Main {
         sc.close();
     }
 }
+ */

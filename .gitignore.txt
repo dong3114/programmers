@@ -9,6 +9,7 @@
 # 🔧 IDE 설정파일 - IntelliJ
 .idea/
 *.iml
+workspace.xml
 
 # 🧪 테스트 결과
 /test-output/

@@ -21,6 +21,7 @@
 # 🧼 시스템 파일
 .DS_Store
 Thumbs.db
+workspace.xml
 
 # 💬 환경변수 파일 (있다면)
 /.env

@@ -22,6 +22,8 @@ public class UserController {
 
         System.out.println(user.getName() + "님이 추가되었습니다");
         System.out.println("소지금: " + user.getMoney() + " 원");
+
+        scanner.close();
     }
 
 }

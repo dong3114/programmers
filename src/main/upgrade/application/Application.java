@@ -2,6 +2,7 @@ package main.upgrade.application;
 
 import main.upgrade.users.controller.UserController;
 import main.upgrade.users.service.UserService;
+
 import java.util.Scanner;
 
 public class Application {
@@ -28,7 +29,7 @@ public class Application {
                 }
                 case 4 -> {
                     System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
-                    break;
+                    gameLoad = false;
                 }
             }
         }

@@ -11,7 +11,7 @@ public class Application {
         UserController userController = new UserController(userService);
         Scanner scanner = new Scanner(System.in);
         boolean gameLoad = true;
-        
+
         while (gameLoad) {
             System.out.println("\n액션을 선택하세요:");
             System.out.println("1. 유저 등록");

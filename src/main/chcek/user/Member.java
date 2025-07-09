@@ -1,4 +1,4 @@
-package main.chcek;
+package main.chcek.user;
 
 public class Member {
     int name;

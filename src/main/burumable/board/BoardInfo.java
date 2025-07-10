@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class BoardInfo {
     private int diceNum;
-    private ArrayList<String> LandNames;
+    private ArrayList<String> Lands;
 
     // setter
     public void setDiceNum(int diceNum) {
         this.diceNum = diceNum;
     }
     public void setLandNames(ArrayList<String> landNames) {
-        LandNames = landNames;
+        Lands = landNames;
     }
 
     // getter
@@ -19,7 +19,7 @@ public class BoardInfo {
         return diceNum;
     }
     public ArrayList<String> getLandNames() {
-        return LandNames;
+        return Lands;
     }
 
 }

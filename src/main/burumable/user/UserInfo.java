@@ -1,14 +1,13 @@
 package main.burumable.user;
 
-import main.chcek.situp.SitUpImpl;
-
 import java.util.ArrayList;
+import java.util.List;
 
 public class UserInfo {
-    private int id;
+    private final int id;
     private int playerLocation;
     private int gold;
-    ArrayList<String> lands = new ArrayList<>();
+    private List<String> lands;
 
     public void showUserInfo() {
         System.out.println("현재유저아이디" + this.id);
@@ -20,21 +19,25 @@ public class UserInfo {
     public int getPlayerLocation() {
         return this.playerLocation;
     }
-
-    public UserInfo(Builder builder) {
+    // 생성자 외부에서 불러오지 못하게 -> 빌더 강제 하기 위해서 private 선언함
+    private UserInfo(Builder builder) {
         this.id = builder.id;
         this.playerLocation = builder.playerLocation;
         this.gold = builder.gold;
         this.lands = builder.lands;
     }
 
+    public static Builder builder(int id) {
+        return new Builder(id);
+    }
+
     public static class Builder{
         private int id;
         private int playerLocation;
         private int gold;
-        private ArrayList<String> lands = new ArrayList<>();
+        private List<String> lands = new ArrayList<>();
 
-        public Builder(int id){
+        private Builder(int id){
             this.id = id;
             this.gold = 1000000;    // 초기 자금 100만원
         }

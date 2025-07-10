@@ -18,19 +18,18 @@ public class User {
     public UserInfo createUser(){
         System.out.println("유저 숫자를 입력하세요.");
         int inputData = sc.nextInt();
-        return new UserInfo.Builder(inputData)
-                                    .lands(null)
-                                    .playerLocation(0)
-                                    .build();
+        return UserInfo.builder(inputData)
+                        .lands(null)
+                        .playerLocation(0)
+                        .build();
     }
     // 주사위 굴리기
-    private String getLocationByDice(){
-        int currentLocation = userInfo.getPlayerLocation();
-        int diceNumber = board.rollDice();
-        int sum = currentLocation+diceNumber;
-        if(sum > board.getLandNamesLen()) {
-            diceNumber = sum - board.getLandNamesLen();
-        }
+    private String moveByDice(){
+        int currentLocation = userInfo.getPlayerLocation(); // 현재위치 load
+        int diceNumber = board.rollDice();                  // 주사위 굴리기
+        diceNumber = (currentLocation + diceNumber) % board.getLandNamesLen();             //
         return board.getLandNames(diceNumber);
     }
+
+
 }

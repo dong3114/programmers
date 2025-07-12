@@ -1,4 +1,6 @@
-package main.burumable.board;
+package main.burumable.board.service;
+
+import main.burumable.board.domain.BoardInfo;
 
 import java.util.ArrayList;
 

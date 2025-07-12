@@ -1,4 +1,4 @@
-package main.burumable.board;
+package main.burumable.board.domain;
 
 import java.util.ArrayList;
 

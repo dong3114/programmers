@@ -1,4 +1,4 @@
-package main.burumable.land;
+package main.burumable.land.domain;
 
 public class LandInfo {
     private String landName;

@@ -1,4 +1,4 @@
-package main.burumable.user;
+package main.burumable.user.domain;
 
 import java.util.ArrayList;
 import java.util.List;

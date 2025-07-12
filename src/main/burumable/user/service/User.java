@@ -1,6 +1,7 @@
-package main.burumable.user;
+package main.burumable.user.service;
 
 import main.burumable.board.service.Board;
+import main.burumable.user.domain.UserInfo;
 
 import java.util.Scanner;
 

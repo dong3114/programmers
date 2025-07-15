@@ -39,8 +39,6 @@ public class UserServiceImpl implements UserService{
         for(Land item : userLands) {
             
         }
-
-
         return false;
     }
 

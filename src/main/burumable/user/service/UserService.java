@@ -1,5 +1,7 @@
 package main.burumable.user.service;
 
+import main.burumable.land.domain.Land;
+
 public interface UserService {
     /**
      * 유저가 땅을 구매하는 행위.
@@ -13,7 +15,7 @@ public interface UserService {
      *   <li>구매 또는 종료를 선택하면 메서드 종료</li>
      * </ol>
      */
-    void buyLand();
+    void buyLand(Land land);
 
     /**
      * 유저가 소유 중인 땅을 판매하는 행위.
@@ -27,7 +29,7 @@ public interface UserService {
      *
      * <p>※ LinkedList 사용 권장 (삭제 성능 고려)</p>
      */
-    void sellLand();
+    boolean sellLand();
 
     /**
      * 세금을 은행에 납부하는 행위.

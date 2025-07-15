@@ -36,6 +36,9 @@ public class User {
         this.isAlive = isAlive;
         return this.isAlive;
     }
+    public void addLand(Land land) {
+        this.userLands.add(land);
+    }
 
     public static Builder builder(String userName, int userMoney){
         return new Builder(userName, userMoney);
@@ -82,6 +85,17 @@ public class User {
             this.isLoan = isLoan;
             return this;
         }
+    }
+    // getter
+    public int getUserMoney() {
+        return this.userMoney;
+    }
 
+    public String getUserName() {
+        return this.userName;
+    }
+
+    public List<Land> getUserLands () {
+        return this.userLands;
     }
 }

@@ -19,4 +19,11 @@ public abstract class Land {
     public void setLandUserName(String landUserName) {
         this.landUserName = landUserName;
     }
+    public int getLandPrice() {
+        return this.landPrice;
+    }
+    public String getLandName() {
+        return this.landName;
+    }
+
 }

@@ -2,6 +2,7 @@ package main.burumable.view;
 
 import main.burumable.land.domain.Land;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -11,9 +12,21 @@ public class LandView {
         System.out.println("1. 구매한다.    2. 땅 판매     3. 종료");
         return sc.nextLine();
     }
+    // havaLands로 배열에 담긴 메세지 출력 담당
+    public static void printLandMessages(List<Land> lands) {
+        ViewMessage<List<Land>> landMessage = LandView::haveLands;
+        List<String> result = landMessage.getMessage(lands);
+        result.forEach(System.out::println);
+    }
 
-    public static void haveLands(List<Land> lands) {
-        if(lands.isEmpty()) System.out.println("가지고있는 땅이 없습니다.");
+    // String 메세지를 오직 담는 행위만 함.
+    private static List<String> haveLands(List<Land> lands) {
+        List<String> result = new ArrayList<>();
+        if(lands.isEmpty()) {
+            result.add("가지고있는 땅이 없습니다.");
+            return result;
+        }
+
         for (int i = 0; i < lands.size(); i += 3) {
             Land land1 = lands.get(i);
             Land land2 = i+1 < lands.size()? lands.get(i+1) : null;
@@ -30,9 +43,8 @@ public class LandView {
                     land2 != null ? land2.getLandPrice() : 0,
                     land3 != null ? land3.getLandPrice() : 0
             );
-            System.out.println(message);
+            result.add(message);
         }
+        return result;
     }
-
-
 }

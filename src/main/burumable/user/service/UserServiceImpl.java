@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService{
         User user = this.user;
         List<Land> userLands = user.getUserLands();
         // 1. 땅 정보 보여주기
-        haveLands(userLands);
+        printLandMessages(userLands);
         // 2. 객체 선택해서 팔기
 
         // 3. 유저 money 업데이트

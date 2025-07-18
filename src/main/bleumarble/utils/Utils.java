@@ -1,4 +1,4 @@
-package main.burumable.utils;
+package main.bleumarble.utils;
 
 public class Utils {
     public static int safeParseInteger(String input) {

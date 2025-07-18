@@ -1,6 +1,6 @@
-package main.burumable.view;
+package main.bleumarble.view;
 
-import main.burumable.land.domain.Land;
+import main.bleumarble.land.domain.Land;
 
 import java.util.ArrayList;
 import java.util.List;

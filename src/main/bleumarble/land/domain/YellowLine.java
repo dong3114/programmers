@@ -1,14 +1,15 @@
-package main.burumable.land.domain;
+package main.bleumarble.land.domain;
 
-public class GreenLine extends Land{
+public class YellowLine extends Land{
     private final double landRatio;
 
-    public GreenLine(String landName, int landPrice) {
+    public YellowLine(String landName, int landPrice) {
         super(landName, landPrice);
-        this.landRatio = 0.2;
+        this.landRatio = 0.3;
     }
     @Override
     public int calculateTax() {
         return (int) (landPrice*this.landRatio);
     }
+
 }

@@ -1,4 +1,4 @@
-package main.burumable.view;
+package main.bleumarble.view;
 
 import java.util.List;
 

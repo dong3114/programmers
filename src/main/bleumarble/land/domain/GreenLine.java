@@ -1,9 +1,9 @@
-package main.burumable.land.domain;
+package main.bleumarble.land.domain;
 
-public class RedLine extends Land{
+public class GreenLine extends Land{
     private final double landRatio;
 
-    public RedLine(String landName, int landPrice) {
+    public GreenLine(String landName, int landPrice) {
         super(landName, landPrice);
         this.landRatio = 0.2;
     }

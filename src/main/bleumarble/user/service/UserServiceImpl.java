@@ -1,10 +1,10 @@
-package main.burumable.user.service;
+package main.bleumarble.user.service;
 
-import static main.burumable.utils.Utils.*;
-import static main.burumable.view.LandView.*;
+import static main.bleumarble.utils.Utils.*;
+import static main.bleumarble.view.LandView.*;
 
-import main.burumable.land.domain.Land;
-import main.burumable.user.domain.User;
+import main.bleumarble.land.domain.Land;
+import main.bleumarble.user.domain.User;
 
 import java.util.List;
 import java.util.Scanner;

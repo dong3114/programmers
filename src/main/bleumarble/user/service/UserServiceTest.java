@@ -1,10 +1,10 @@
-package main.burumable.user.service;
+package main.bleumarble.user.service;
 
-import main.burumable.land.domain.GreenLine;
-import main.burumable.land.domain.Land;
-import main.burumable.land.domain.RedLine;
-import main.burumable.land.domain.YellowLine;
-import main.burumable.user.domain.User;
+import main.bleumarble.land.domain.GreenLine;
+import main.bleumarble.land.domain.Land;
+import main.bleumarble.land.domain.RedLine;
+import main.bleumarble.land.domain.YellowLine;
+import main.bleumarble.user.domain.User;
 
 import java.util.ArrayList;
 import java.util.List;

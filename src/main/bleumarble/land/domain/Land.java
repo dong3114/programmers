@@ -1,4 +1,4 @@
-package main.burumable.land.domain;
+package main.bleumarble.land.domain;
 
 public abstract class Land {
     protected final String landName;

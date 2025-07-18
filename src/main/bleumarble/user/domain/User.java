@@ -1,6 +1,6 @@
-package main.burumable.user.domain;
+package main.bleumarble.user.domain;
 
-import main.burumable.land.domain.Land;
+import main.bleumarble.land.domain.Land;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package main.burumable.user.service;
+package main.bleumarble.user.service;
 
-import main.burumable.land.domain.Land;
+import main.bleumarble.land.domain.Land;
 
 public interface UserService {
     /**

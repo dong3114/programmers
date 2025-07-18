@@ -1,7 +1,6 @@
-package main.burumable.board.service;
+package main.bleumarble.board.service;
 
-import main.burumable.board.domain.Board;
-import main.burumable.user.domain.User;
+import main.bleumarble.user.domain.User;
 
 public class BoardServiceImpl implements BoardService{
     @Override

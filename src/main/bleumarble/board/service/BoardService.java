@@ -1,6 +1,6 @@
-package main.burumable.board.service;
+package main.bleumarble.board.service;
 
-import main.burumable.user.domain.User;
+import main.bleumarble.user.domain.User;
 
 public interface BoardService {
     /**

@@ -7,30 +7,37 @@ import java.util.List;
 
 public class View implements ViewInfo<List<Land>> {
     @Override
-    public void render(List<Land> data) {
-        if(data.isEmpty()) {
+    public void render(List<Land> lands) {
+        if(lands.isEmpty()) {
             System.out.println("가지고있는 땅이 없습니다.");
             return;
         }
-        for (int i = 0; i < data.size(); i += 3) {
-            Land land1 = data.get(i);
-            Land land2 = i+1 < data.size()? data.get(i+1) : null;
-            Land land3 = i+2 < data.size()? data.get(i+2) : null;
+        for (int i = 0; i < lands.size(); i += 3) {
+            Land firstItem = getItem(lands,i);
+            Land secondItem = getItem(lands,i+1);
+            Land thirdItem = i+2 < lands.size()? lands.get(i+2) : null;
 
             String message =  """
                 땅 이름: %-10s | 땅 이름: %-10s | 땅 이름: %-10s
                 땅 가격: %-10d | 땅 가격: %-10d | 땅 가격: %-10d
                 """.formatted(
-                    land1.getLandName(),
-                    land2 != null ? land2.getLandName() : "-",
-                    land3 != null ? land3.getLandName() : "-",
-                    land1.getLandPrice(),
-                    land2 != null ? land2.getLandPrice() : 0,
-                    land3 != null ? land3.getLandPrice() : 0
+                    getName(firstItem), getName(secondItem),getName(thirdItem),
+                    getPrice(firstItem), getPrice(secondItem), getPrice(thirdItem)
             );
+            System.out.println(message);
         }
-
-        System.out.println();
+    }
+    // 인덱스별 Land 정보 반환
+    private Land getItem(List<Land> list, int index) {
+        return index < list.size() ? list.get(index) : null;
+    }
+    // Land 이름 반환
+    private String getName(Land land){
+        return land != null ? land.getLandName() : "-";
+    }
+    // Land 가격 반환
+    private int getPrice(Land land) {
+        return land != null ? land.getLandPrice() : 0;
     }
 
 

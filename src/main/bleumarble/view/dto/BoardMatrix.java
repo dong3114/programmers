@@ -1,4 +1,4 @@
-package main.burumable.view.dto;
+package main.bleumarble.view.dto;
 
 public class BoardMatrix {
     String landName;
